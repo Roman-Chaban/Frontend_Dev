@@ -1,3 +1,5 @@
 import { HeaderNavItem } from "@/entities/interfaces/header";
 
-export type HeaderNavItems = Array<HeaderNavItem>;
+type HeaderNavItems = Array<HeaderNavItem>;
+
+export type { HeaderNavItems };

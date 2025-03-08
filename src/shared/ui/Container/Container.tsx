@@ -2,11 +2,15 @@ import { type FC } from "react";
 
 import { ContainerProps } from "@/entities/interfaces/container";
 
-const Container: FC<ContainerProps> = ({ children, className = "" }) => {
+const Container: FC<ContainerProps> = ({
+   children,
+   tag: Tag = "div",
+   className = "",
+}) => {
    return (
-      <div className={`grid h-full w-full grid-cols-12 ${className}`}>
+      <Tag className={`grid h-full w-full grid-cols-12 ${className}`}>
          {children}
-      </div>
+      </Tag>
    );
 };
 

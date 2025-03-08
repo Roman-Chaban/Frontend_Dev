@@ -1,5 +1,8 @@
 import { type ReactNode, HTMLAttributes } from "react";
 
-export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
+interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
    children: ReactNode;
+   tag: "div" | "section";
 }
+
+export type { ContainerProps };
