@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Header: FC = () => {
    return (
-      <header className='relative mx-auto h-full w-full px-[5rem] pt-[2.5rem] max-[90rem]:px-[3.5rem]'>
+      <header className='relative mx-auto h-full w-full px-[7.5rem] pt-[2.5rem] max-[90rem]:px-[3.5rem]'>
          <Container tag='div' className=''>
             <HeaderLogo />
             <HeaderNav />
