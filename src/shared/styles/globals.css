@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+    --color-header-logo: #e5e5e5;
+    --color-header-logo-after: #f8e7a1;
+    --color-hero-about-heading: #868490;
+
+    --text-main-heading: 5rem;
+    --text-main-paragraph: 1.25rem;
+
+    --leading-large: 180%;
+}
+
 html,
 body {
     @apply w-full h-full bg-[#030E21];

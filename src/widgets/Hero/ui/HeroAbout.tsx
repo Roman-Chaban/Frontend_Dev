@@ -4,19 +4,16 @@ import { heroAboutList } from "../data/hero-about";
 
 const HeroAbout: FC = () => {
    return (
-      <div className='relative z-50'>
-         <ul className='flex flex-col items-end justify-end gap-[5rem] max-[71.875rem]:gap-[2rem]'>
+      <div className='relative z-50 col-span-2'>
+         <ul className='flex h-full flex-col gap-24'>
             {heroAboutList.map((item) => (
-               <li
-                  key={item.id}
-                  className='w-fit-content flex flex-col items-end justify-end gap-[1rem] max-[71.875rem]:gap-[0.7rem]'
-               >
-                  <h4 className='max-[90rem] text-right text-[1.5rem] text-[#868490]'>
+               <li key={item.id} className='flex flex-col items-end'>
+                  <h3 className='text-hero-about-heading text-end text-2xl max-[87.8125rem]:text-xl'>
                      {item.title}
-                  </h4>
-                  <p className='max-w-[15rem] text-center text-[3rem] text-white max-[90rem]:text-end max-[90rem]:text-[2rem]'>
+                  </h3>
+                  <span className='text-end text-5xl text-white max-[87.8125rem]:text-3xl'>
                      {item.subtitle}
-                  </p>
+                  </span>
                </li>
             ))}
          </ul>

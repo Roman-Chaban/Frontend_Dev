@@ -1,17 +1,16 @@
-import { type FC } from "react";
-
 import Image from "next/image";
+import { type FC } from "react";
 
 const HeroBanner: FC = () => {
    return (
-      <div className='relative right-[5rem] z-50 max-[71.875rem]:right-[3rem]'>
+      <div className='relative z-50 col-span-4'>
          <Image
             priority
-            className='max-h-[100%] max-w-[115%] rounded-2xl max-[90rem]:max-w-[100%]'
             src={"/hero/profile.jpg"}
             alt='Profile Image'
-            width={800}
-            height={800}
+            width={600}
+            height={600}
+            className='absolute right-10 max-h-[100%] max-w-[100%] rounded-2xl object-cover'
          />
       </div>
    );

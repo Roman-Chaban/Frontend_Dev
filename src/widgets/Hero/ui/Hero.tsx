@@ -3,16 +3,18 @@ import { type FC } from "react";
 import { HeroInformation } from "./HeroInformation";
 import { HeroBanner } from "./HeroBanner";
 import { HeroAbout } from "./HeroAbout";
+import { Container } from "@/shared/ui/Container/Container";
 
 const Hero: FC = () => {
    return (
-      <section>
-         <div className='relative mx-auto flex items-center justify-between px-[7.5rem] pt-[5.75rem] pb-[7.5rem] max-[90rem]:px-[3.5rem] max-[68.75rem]:pt-[3.5rem]'>
-            <HeroInformation />
-            <HeroBanner />
-            <HeroAbout />
-         </div>
-      </section>
+      <Container
+         tag='section'
+         className='relative mx-auto min-h-[48rem] w-full max-w-[90rem] px-33 pb-31 max-[90rem]:min-h-[100%] max-[89rem]:px-14'
+      >
+         <HeroInformation />
+         <HeroBanner />
+         <HeroAbout />
+      </Container>
    );
 };
 

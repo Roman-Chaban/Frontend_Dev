@@ -8,8 +8,11 @@ import Image from "next/image";
 
 const Header: FC = () => {
    return (
-      <header className='relative mx-auto h-full w-full px-[7.5rem] pt-[2.5rem] max-[90rem]:px-[3.5rem]'>
-         <Container tag='div' className=''>
+      <header className='mx-auto w-full max-w-[90rem]'>
+         <Container
+            tag='div'
+            className='px-33 pt-10 pb-22 max-[89rem]:px-14 max-[87.8125rem]:pb-15'
+         >
             <HeaderLogo />
             <HeaderNav />
          </Container>
