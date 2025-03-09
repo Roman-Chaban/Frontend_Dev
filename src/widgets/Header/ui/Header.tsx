@@ -11,7 +11,7 @@ const Header: FC = () => {
       <header className='mx-auto w-full max-w-[90rem]'>
          <Container
             tag='div'
-            className='px-33 pt-10 pb-22 max-[89rem]:px-14 max-[87.8125rem]:pb-15'
+            className='px-33 pt-10 pb-22 max-[90rem]:px-14 max-[87.8125rem]:pb-15 max-[64rem]:px-10'
          >
             <HeaderLogo />
             <HeaderNav />

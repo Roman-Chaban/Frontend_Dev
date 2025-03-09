@@ -3,7 +3,7 @@ import { type FC } from "react";
 
 const HeroBanner: FC = () => {
    return (
-      <div className='relative z-50 col-span-4'>
+      <div className='relative z-50 col-span-4 max-[64rem]:right-0 max-[64rem]:col-span-5'>
          <Image
             priority
             src={"/hero/profile.jpg"}
