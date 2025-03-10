@@ -21,19 +21,17 @@ const Skills: FC = () => {
                {[...skillsList, ...skillsList].map((item, index) => (
                   <li
                      key={index}
-                     className='listItem flex w-[6.25rem] flex-col items-center gap-1.5'
+                     className='flex w-[6.25rem] flex-col items-center gap-2'
                   >
-                     <div className='flex h-20 w-20 items-center justify-center'>
-                        <Image
-                           priority
-                           className={styles.icon}
-                           src={item.icon}
-                           alt={item.label}
-                           width={70}
-                           height={70}
-                        />
-                     </div>
-                     <span className='mt-3 inline-block w-full max-w-20 text-center text-[1.1rem] font-medium whitespace-nowrap text-white'>
+                     <Image
+                        priority
+                        className={styles.icon}
+                        src={item.icon}
+                        alt={item.label}
+                        width={70}
+                        height={70}
+                     />
+                     <span className='mt-3 inline-block w-full max-w-20 text-center text-[1rem] font-medium whitespace-nowrap text-white'>
                         {item.label}
                      </span>
                   </li>

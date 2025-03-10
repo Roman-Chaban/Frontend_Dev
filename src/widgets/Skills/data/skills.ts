@@ -43,63 +43,73 @@ const skillsList: SkillsItems = [
    },
    {
       id: 9,
+      icon: "icons/skills/reactquery.svg",
+      label: "React Query",
+   },
+   {
+      id: 10,
       icon: "icons/skills/tailwindcss.svg",
       label: "Tailwind",
    },
    {
-      id: 10,
+      id: 11,
       icon: "icons/skills/redux.svg",
       label: "Redux Toolkit",
    },
    {
-      id: 11,
+      id: 12,
       icon: "icons/skills/typescript.svg",
       label: "Typescript",
    },
    {
-      id: 12,
+      id: 13,
       icon: "icons/skills/reactrouter.svg",
       label: "React Router",
    },
    {
-      id: 13,
+      id: 14,
       icon: "icons/skills/materialui.svg",
       label: "MUI",
    },
    {
-      id: 14,
+      id: 15,
       icon: "icons/skills/jest.svg",
       label: "Jest",
    },
    {
-      id: 15,
+      id: 16,
       icon: "icons/skills/prettier-icon-dark.svg",
       label: "Prettier",
    },
    {
-      id: 16,
+      id: 17,
       icon: "icons/skills/postman.svg",
       label: "Postman",
    },
    {
-      id: 17,
+      id: 18,
       icon: "icons/skills/npm.svg",
       label: "npm",
    },
    {
-      id: 18,
+      id: 19,
       icon: "icons/skills/pnpm.svg",
       label: "pnpm",
    },
    {
-      id: 19,
+      id: 20,
       icon: "icons/skills/yarn.svg",
       label: "Yarn",
    },
    {
-      id: 20,
+      id: 21,
       icon: "icons/skills/google.svg",
       label: "Google API",
+   },
+   {
+      id: 22,
+      icon: "icons/skills/figma.svg",
+      label: "Figma",
    },
 ];
 
