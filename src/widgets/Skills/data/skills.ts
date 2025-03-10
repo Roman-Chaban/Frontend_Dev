@@ -108,7 +108,7 @@ const skillsList: SkillsItems = [
    },
    {
       id: 22,
-      icon: "icons/skills/figma.svg",
+      icon: "icons/skills/Figma.svg",
       label: "Figma",
    },
 ];
