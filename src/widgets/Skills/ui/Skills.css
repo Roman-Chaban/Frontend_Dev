@@ -1,0 +1,17 @@
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-20%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 10s alternate-reverse infinite;
+}
+
+.icon {
+    width: 4.375rem;
+    height: 4.375rem;
+}
