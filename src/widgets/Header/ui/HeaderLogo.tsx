@@ -2,8 +2,8 @@ import { type FC } from "react";
 
 const HeaderLogo: FC = () => {
    return (
-      <div className='relative z-50 col-span-2'>
-         <span className='content text-header-logo after:bg-header-logo-after relative text-[2rem] font-bold uppercase after:absolute after:top-[0.5rem] after:right-[-0.7rem] after:inline-block after:h-[0.5rem] after:w-[0.5rem] after:rounded-[100%] after:content-[""] max-[67.5rem]:text-[1.5rem] max-[67.5rem]:after:top-[2]'>
+      <div className='relative z-50 max-w-fit'>
+         <span className='after:bg-logo-after relative flex justify-end gap-1 text-3xl font-semibold uppercase after:absolute after:top-1.5 after:right-[-12] after:h-2 after:w-2 after:rounded-[100%] after:content-[""]'>
             Chaban
          </span>
       </div>

@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
 
 import { Header } from "@/widgets/Header/ui/Header";
+import { Footer } from "@/widgets/Footer/ui/Footer";
 
 const poppins = Poppins({
    subsets: ["latin"],
@@ -14,11 +15,12 @@ import "@/shared/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
    return (
-      <div className={poppins.className}>
+      <div className={`grid h-full w-full grid-cols-12 ${poppins.className}`}>
          <Header />
-         <main>
+         <main className='col-span-12 w-full'>
             <Component {...pageProps} />
          </main>
+         <Footer />
       </div>
    );
 }

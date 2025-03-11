@@ -1,17 +1,23 @@
-@keyframes scroll {
+@keyframes scrollAnimated {
     from {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
-.animate-scroll {
-    animation: scroll 15s alternate infinite;
+.animatedWrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-.icon {
-    width: 4.375rem;
-    height: 4.375rem;
+.animatedScroll {
+    display: flex;
+    gap: 10rem;
+    min-width: 200%;
+    flex-shrink: 0;
+    white-space: nowrap;
+    animation: scrollAnimated 10s ease-in-out infinite alternate;
 }

@@ -1,21 +1,17 @@
 import { type FC } from "react";
 
-import { Container } from "@/shared/ui/Container/Container";
+import Image from "next/image";
+
 import { HeaderLogo } from "./HeaderLogo";
 import { HeaderNav } from "./HeaderNav";
 
-import Image from "next/image";
-
 const Header: FC = () => {
    return (
-      <header className='relative z-70 w-full'>
-         <Container
-            tag='div'
-            className='mx-auto w-full max-w-[113.5rem] px-33 pt-10 pb-22 max-[87.8125rem]:pb-15 max-[64rem]:px-10 max-[97.5rem]:px-16'
-         >
+      <header className='relative z-10 col-span-12 h-full w-full'>
+         <div className='relative mx-auto flex w-full max-w-[96.875rem] items-center justify-between px-30 pt-10 pb-23 max-[90.0625rem]:px-18 max-[86.25rem]:px-10'>
             <HeaderLogo />
             <HeaderNav />
-         </Container>
+         </div>
          <Image
             priority
             className='absolute top-0 right-0 z-5 h-auto w-auto max-w-[100%]'

@@ -2,43 +2,28 @@ import { type FC } from "react";
 
 import Image from "next/image";
 
-import { Container } from "@/shared/ui/Container/Container";
-
-import { skillsList } from "../data/skills";
+import { SkillsList } from "./SkillsList";
 
 import styles from "./Skills.module.css";
 
 const Skills: FC = () => {
    return (
-      <Container
-         tag='section'
-         className='bg-skills relative h-full w-full overflow-hidden p-5'
-      >
-         <div
-            className={`${styles["animate-scroll"]} col-span-12 flex w-max py-8`}
-         >
-            <ul className='flex w-full items-center gap-10 px-10'>
-               {[...skillsList, ...skillsList].map((item, index) => (
-                  <li
-                     key={index}
-                     className='flex w-[6.25rem] flex-col items-center gap-2'
-                  >
-                     <Image
-                        priority
-                        className={styles.icon}
-                        src={item.icon}
-                        alt={item.label}
-                        width={70}
-                        height={70}
-                     />
-                     <span className='mt-3 inline-block w-full max-w-20 text-center text-[1rem] font-medium whitespace-nowrap text-white'>
-                        {item.label}
-                     </span>
-                  </li>
-               ))}
-            </ul>
+      <section className='h-auto w-full backdrop-blur-sm'>
+         <div className='bg-skills relative z-30 mt-30'>
+            <div className={styles.animatedWrapper}>
+               <div className={styles.animatedScroll}>
+                  <SkillsList />
+               </div>
+            </div>
          </div>
-      </Container>
+         <Image
+            className='absolute bottom-[-350] left-0 z-10'
+            src={"/backgrounds/skills-bg.svg"}
+            alt='Skills background'
+            width={400}
+            height={400}
+         />
+      </section>
    );
 };
 

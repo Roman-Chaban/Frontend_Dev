@@ -4,19 +4,19 @@ import { heroAboutList } from "../data/hero-about";
 
 const HeroAbout: FC = () => {
    return (
-      <div className='max-w-100% relative z-50 col-span-2 w-full'>
-         <ul className='max-[64re]: flex h-full w-full flex-col gap-24 max-[64rem]:max-w-full max-[64rem]:gap-[4rem]'>
+      <div className='relative z-20 flex-1'>
+         <ul className='flex h-full flex-col justify-between gap-[5.8125rem]'>
             {heroAboutList.map((item) => (
                <li
                   key={item.id}
-                  className='flex flex-col items-end max-[64rem]:items-start max-[64rem]:gap-[1rem]'
+                  className='flex flex-col items-end gap-3 max-[86.25rem]:items-start'
                >
-                  <h3 className='text-hero-about-heading text-end text-2xl max-[87.8125rem]:text-xl max-[64rem]:text-start'>
+                  <span className='text-2xl max-[86.25rem]:text-xl'>
                      {item.title}
-                  </h3>
-                  <span className='text-end text-5xl text-white max-[87.8125rem]:text-4xl max-[64rem]:text-start'>
-                     {item.subtitle}
                   </span>
+                  <h3 className='text-start text-5xl max-[86.25rem]:text-3xl'>
+                     {item.subtitle}
+                  </h3>
                </li>
             ))}
          </ul>

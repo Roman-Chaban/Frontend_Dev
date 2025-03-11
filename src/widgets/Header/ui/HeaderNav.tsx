@@ -1,18 +1,18 @@
 import { type FC } from "react";
 
-import { headerNav } from "../data/nav";
-
 import Link from "next/link";
+
+import { headerNav } from "../data/nav";
 
 const HeaderNav: FC = () => {
    return (
-      <nav className='background-no-repeat relative z-20 col-span-10 flex w-full justify-end max-[64rem]:hidden'>
-         <ul className='flex items-center justify-end gap-[2.5rem]'>
+      <nav className='max-w-fit relative z-50'>
+         <ul className='flex w-full items-center gap-10'>
             {headerNav.map((item) => (
-               <li key={item.id} className='w-content flex h-full items-center'>
+               <li key={item.id}>
                   <Link
                      href={item.href}
-                     className='text-[1.125rem] font-medium text-white opacity-[0.7]'
+                     className='text-[1.125rem] text-white opacity-70'
                   >
                      {item.label}
                   </Link>

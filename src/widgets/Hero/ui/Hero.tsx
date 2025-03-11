@@ -1,20 +1,20 @@
 import { type FC } from "react";
 
 import { HeroInformation } from "./HeroInformation";
-import { HeroBanner } from "./HeroBanner";
+import { HeroProfile } from "./HeroProfile";
 import { HeroAbout } from "./HeroAbout";
-import { Container } from "@/shared/ui/Container/Container";
 
 const Hero: FC = () => {
    return (
-      <Container
-         tag='section'
-         className='relative z-70 mx-auto w-full max-w-[113.5rem] px-33 pb-20 max-[113.5rem]:pb-16 max-[97.5rem]:px-16 max-[90rem]:px-14 max-[64rem]:flex max-[64rem]:flex-col max-[64rem]:gap-[3rem] max-[64rem]:px-10'
-      >
-         <HeroInformation />
-         <HeroBanner />
-         <HeroAbout />
-      </Container>
+      <section className='relative z-20 w-full'>
+         <div className='mx-auto max-w-[96.875rem] px-30 max-[90.0625rem]:px-18 max-[86.25rem]:px-10'>
+            <div className='flex justify-between'>
+               <HeroInformation />
+               <HeroProfile />
+               <HeroAbout />
+            </div>
+         </div>
+      </section>
    );
 };
 
