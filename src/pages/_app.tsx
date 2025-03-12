@@ -15,9 +15,9 @@ import "@/shared/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
    return (
-      <div className={`grid h-full w-full grid-cols-12 ${poppins.className}`}>
+      <div className={`flex min-h-screen flex-col ${poppins.className}`}>
          <Header />
-         <main className='col-span-12 min-h-[100vh] w-full'>
+         <main className='flex-1'>
             <Component {...pageProps} />
          </main>
          <Footer />

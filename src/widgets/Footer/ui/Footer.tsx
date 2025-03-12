@@ -1,7 +1,8 @@
 import { type FC } from "react";
 
-import { footerSocialList } from "../data/footer-social";
 import Link from "next/link";
+
+import { footerSocialList } from "../data/footer-social";
 
 const Footer: FC = () => {
    return (
@@ -10,7 +11,7 @@ const Footer: FC = () => {
             <h2 className='relative z-100 mb-10 text-7xl leading-[110%] font-semibold max-[90rem]:text-6xl max-[51.5rem]:text-5xl max-[31.3125rem]:pb-15 max-[26.5625rem]:text-2xl'>
                Do you want to contact me?
             </h2>
-            <ul className='relative flex items-center justify-end gap-8 max-[31.3125rem]:justify-start'>
+            <ul className='relative flex items-center justify-end gap-8 max-[35.875rem]:gap-4 max-[31.3125rem]:justify-start'>
                <h5 className='absolute left-0 text-4xl leading-[110%] font-medium max-[90rem]:text-3xl max-[31.3125rem]:bottom-20 max-[26.5625rem]:text-2xl'>
                   Follow me
                </h5>

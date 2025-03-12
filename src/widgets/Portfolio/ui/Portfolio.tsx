@@ -24,7 +24,7 @@ const Portfolio: FC = () => {
                         height={500}
                      />
                      <div className='flex w-full items-center justify-between max-[30.8125rem]:flex-col max-[30.8125rem]:gap-5'>
-                        <h4 className='max-[30.8125rem]:text-xl  max-[26.5625rem]:text-[1rem]'>
+                        <h4 className='max-[30.8125rem]:text-xl max-[26.5625rem]:text-[1rem]'>
                            {project.projectName}
                         </h4>
                         <Link
