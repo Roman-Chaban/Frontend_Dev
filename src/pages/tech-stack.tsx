@@ -1,24 +1,15 @@
-import { skillsList } from "@/widgets/Skills/data/skills";
 import Head from "next/head";
+
 import Image from "next/image";
+
+import { skillsList } from "@/widgets/Skills/data/skills";
+
 import { motion } from "framer-motion";
 
-const containerVariants = {
-   hidden: { opacity: 0 },
-   visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.2 },
-   },
-};
-
-const itemVariants = {
-   hidden: { opacity: 0, y: 50 },
-   visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-   },
-};
+import {
+   containerVariants,
+   itemVariants,
+} from "@/shared/animations/tech/tech-stack";
 
 export default function TechStackPage() {
    return (
@@ -51,6 +42,7 @@ export default function TechStackPage() {
                      >
                         <div className='flex h-20 w-20 items-center justify-center'>
                            <Image
+                              title={skill.label}
                               className='object-contain max-[90rem]:max-w-[4.5rem]'
                               src={skill.icon}
                               alt={skill.label}
@@ -65,7 +57,7 @@ export default function TechStackPage() {
             </div>
             <Image
                priority
-               className='absolute top-35 left-0 z-5 h-auto w-auto max-w-[90%] max-[90rem]:max-h-[40rem] max-[90rem]:top-160'
+               className='absolute top-35 left-0 z-5 h-auto w-auto max-w-[90%] max-[90rem]:top-160 max-[90rem]:max-h-[40rem]'
                src={"/backgrounds/portfolio-bg.svg"}
                alt='Header background'
                width={300}
