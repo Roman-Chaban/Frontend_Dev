@@ -4,7 +4,7 @@ import { type FC } from "react";
 
 const HeroProfile: FC = () => {
    return (
-      <div className='relative right-10 z-[-20] h-[25rem] max-h-full w-[25rem] max-w-full max-[90rem]:max-w-[21rem]'>
+      <div className='relative right-10 z-[-20] h-[25rem] max-h-full w-[25rem] max-w-full max-[90rem]:max-w-[21rem] max-[62rem]:hidden'>
          <Image
             src='/hero/profile.jpg'
             className='rh-auto w-auto rounded-md object-cover'

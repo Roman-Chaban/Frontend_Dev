@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
    return (
       <div className={`grid h-full w-full grid-cols-12 ${poppins.className}`}>
          <Header />
-         <main className='col-span-12 w-full'>
+         <main className='col-span-12 min-h-[100vh] w-full'>
             <Component {...pageProps} />
          </main>
          <Footer />

@@ -39,7 +39,7 @@ const skillsList: SkillsItems = [
    {
       id: 8,
       icon: "icons/skills/styledcomponents.svg",
-      label: "Styled c.",
+      label: "Styled Components",
    },
    {
       id: 9,
