@@ -17,7 +17,7 @@ const Skills: FC = () => {
             </div>
          </div>
          <Image
-            className='absolute bottom-[-350] left-0 z-10'
+            className='absolute top-[-300] left-0 z-10 w-auto'
             src={"/backgrounds/skills-bg.svg"}
             alt='Skills background'
             width={400}

@@ -21,7 +21,7 @@ const itemVariants = {
 
 const Hero: FC = () => {
    return (
-      <section className='relative z-20 w-full'>
+      <section className='relative z-100 w-full'>
          <motion.div
             className='mx-auto max-w-[96.875rem] px-30 max-[90.0625rem]:px-18 max-[86.25rem]:px-10 max-[30.8125rem]:px-5'
             initial='hidden'

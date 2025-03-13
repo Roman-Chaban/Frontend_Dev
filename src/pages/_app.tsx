@@ -15,14 +15,13 @@ import {
    initialAnimation,
    pageTransition,
 } from "@/shared/animations/app-animation/app-animation";
+import "@/shared/styles/globals.css";
 
 const poppins = Poppins({
    subsets: ["latin"],
    display: "swap",
    weight: ["400", "500", "600", "700", "800", "900"],
 });
-
-import "@/shared/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
    const { pathname } = useRouter();

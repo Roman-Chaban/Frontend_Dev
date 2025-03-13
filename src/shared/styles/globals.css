@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-    --color-logo: #e5e5e5;
-    --color-logo-after: #f8e7a1;
-    --color-about-heading: #868490;
-    --color-skills: rgba(9, 20, 39, 0.6);
+   --color-logo: #e5e5e5;
+   --color-logo-after: #f8e7a1;
+   --color-about-heading: #868490;
+   --color-skills: rgba(9, 20, 39, 0.6);
+   --color-burger: rgba(9, 20, 39, 1);
 
-    --text-main-heading: 5rem;
-    --text-main-paragraph: 1.25rem;
+   --text-main-heading: 5rem;
+   --text-main-paragraph: 1.25rem;
 
-    --leading-large: 180%;
+   --leading-large: 180%;
 }
 
 html,
 body {
-    @apply w-full h-full bg-[#030E21] text-white;
+   @apply h-full w-full bg-[#030E21] text-white;
 }

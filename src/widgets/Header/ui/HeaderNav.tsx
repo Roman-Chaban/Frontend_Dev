@@ -1,6 +1,9 @@
 import { type FC } from "react";
+
 import Link from "next/link";
+
 import { motion } from "framer-motion";
+
 import { headerNav } from "../data/nav";
 
 const HeaderNav: FC = () => {
