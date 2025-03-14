@@ -1,5 +1,6 @@
-import { AboutInformation } from "@/features/AboutInformation/AboutInformation";
 import Head from "next/head";
+
+import { AboutInformation } from "@/features/AboutInformation/AboutInformation";
 
 export default function AboutPage() {
    return (

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import { skillsList } from "../data/skills";
 
-const SkillsList: FC = () => {
+export const SkillsList: FC = () => {
    const [newSkills] = useState([...skillsList, ...skillsList]);
 
    return (
@@ -32,5 +32,3 @@ const SkillsList: FC = () => {
       </ul>
    );
 };
-
-export { SkillsList };

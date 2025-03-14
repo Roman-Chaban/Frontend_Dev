@@ -1,9 +1,11 @@
-import { FC } from "react";
+import { type FC } from "react";
 
-const BurgerButton: FC<{ onClick: () => void; isOpen: boolean }> = ({
-   onClick,
-   isOpen,
-}) => {
+interface BurgerButtonProps {
+   onClick: () => void;
+   isOpen: boolean;
+}
+
+export const BurgerButton: FC<BurgerButtonProps> = ({ onClick, isOpen }) => {
    return (
       <button
          className='relative z-20 hidden h-8 w-10 cursor-pointer flex-col items-center justify-center gap-1 max-[62rem]:flex'
@@ -28,5 +30,3 @@ const BurgerButton: FC<{ onClick: () => void; isOpen: boolean }> = ({
       </button>
    );
 };
-
-export { BurgerButton };

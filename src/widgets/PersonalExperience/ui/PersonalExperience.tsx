@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { experienceList } from "../data/experience-list";
 
-const PersonalExperience: FC = () => {
+export const PersonalExperience: FC = () => {
    return (
       <section className='relative w-full'>
          <div className='relative z-70 mx-auto mt-30 mb-25 flex max-w-[96.875rem] flex-col gap-10 px-30 max-[90.0625rem]:px-18 max-[86.25rem]:px-10 max-[30.8125rem]:px-5'>
@@ -35,5 +35,3 @@ const PersonalExperience: FC = () => {
       </section>
    );
 };
-
-export { PersonalExperience };

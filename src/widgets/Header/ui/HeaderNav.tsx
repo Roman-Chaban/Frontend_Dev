@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import { headerNav } from "../data/nav";
 
-const HeaderNav: FC = () => {
+export const HeaderNav: FC = () => {
    return (
       <nav className='relative z-50 max-w-fit max-[62rem]:hidden'>
          <ul className='flex w-full items-center gap-10'>
@@ -25,5 +25,3 @@ const HeaderNav: FC = () => {
       </nav>
    );
 };
-
-export { HeaderNav };

@@ -19,7 +19,7 @@ const itemVariants = {
    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-const Hero: FC = () => {
+export const Hero: FC = () => {
    return (
       <section className='relative z-100 w-full'>
          <motion.div
@@ -46,5 +46,3 @@ const Hero: FC = () => {
       </section>
    );
 };
-
-export { Hero };

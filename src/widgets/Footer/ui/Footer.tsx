@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { footerSocialList } from "../data/footer-social";
 
-const Footer: FC = () => {
+export const Footer: FC = () => {
    return (
       <footer className='bg-skills relative col-span-12 w-full'>
          <section className='mx-auto flex w-full max-w-[96.875rem] flex-col p-10 px-30 max-[90.0625rem]:px-18 max-[86.25rem]:px-10 max-[30.8125rem]:px-5'>
@@ -30,5 +30,3 @@ const Footer: FC = () => {
       </footer>
    );
 };
-
-export { Footer };

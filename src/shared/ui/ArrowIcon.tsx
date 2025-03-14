@@ -1,6 +1,6 @@
 import { type FC } from "react";
 
-const ArrowIcon: FC = () => {
+export const ArrowIcon: FC = () => {
    return (
       <svg
          width='24'
@@ -28,5 +28,3 @@ const ArrowIcon: FC = () => {
       </svg>
    );
 };
-
-export { ArrowIcon };

@@ -6,7 +6,7 @@ import { SkillsList } from "./SkillsList";
 
 import styles from "./Skills.module.css";
 
-const Skills: FC = () => {
+export const Skills: FC = () => {
    return (
       <section className='h-auto w-full backdrop-blur-sm'>
          <div className='bg-skills relative z-30 mt-30'>
@@ -26,5 +26,3 @@ const Skills: FC = () => {
       </section>
    );
 };
-
-export { Skills };

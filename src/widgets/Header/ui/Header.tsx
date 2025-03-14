@@ -7,7 +7,7 @@ import { HeaderNav } from "./HeaderNav";
 import { BurgerButton } from "../../../shared/ui/BurgerButton";
 import { BurgerMenu } from "../../../features/Burger/Burger";
 
-const Header: FC = () => {
+export const Header: FC = () => {
    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
    const handleToggleMenu = () => {
@@ -47,5 +47,3 @@ const Header: FC = () => {
       </header>
    );
 };
-
-export { Header };

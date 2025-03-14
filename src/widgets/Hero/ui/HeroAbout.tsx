@@ -2,7 +2,7 @@ import { type FC } from "react";
 
 import { heroAboutList } from "../data/hero-about";
 
-const HeroAbout: FC = () => {
+export const HeroAbout: FC = () => {
    return (
       <div className='relative z-20 flex-1'>
          <ul className='flex h-full flex-col justify-between gap-[5.8125rem] max-[51.5rem]:flex-row max-[37rem]:flex-col max-[37rem]:gap-[3rem]'>
@@ -23,5 +23,3 @@ const HeroAbout: FC = () => {
       </div>
    );
 };
-
-export { HeroAbout };

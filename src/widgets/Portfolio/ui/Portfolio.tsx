@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import { portfolioProjects } from "../data/portfolioList";
 
-const Portfolio: FC = () => {
+export const Portfolio: FC = () => {
    return (
       <section className='relative w-full'>
          <div className='mx-auto my-16 px-30 max-[90.0625rem]:px-18 max-[86.25rem]:px-10 max-[30.8125rem]:px-5'>
@@ -55,5 +55,3 @@ const Portfolio: FC = () => {
       </section>
    );
 };
-
-export { Portfolio };
