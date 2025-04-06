@@ -1,11 +1,14 @@
 "use client";
 
 import { FC } from "react";
+
 import Link from "next/link";
-import { motion } from "framer-motion";
+
 import { HeaderLogo } from "@/widgets/Header/ui/HeaderLogo";
 import { BurgerButton } from "@/shared/ui/BurgerButton";
 import { headerNav } from "@/widgets/Header/data/nav";
+
+import { motion } from "framer-motion";
 
 interface BurgerMenuProps {
    isOpen: boolean;
@@ -24,7 +27,7 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ isOpen, onClose }) => {
          animate={isOpen ? "open" : "closed"}
          variants={menuVariants}
          transition={{ duration: 0.3 }}
-         className='bg-skills bg-opacity-80 fixed top-0 left-0 z-[100] flex h-screen w-full flex-col backdrop-blur-lg'
+         className='bg-skills bg-opacity-80 fixed inset-0 z-[9999] flex h-screen w-screen flex-col backdrop-blur-lg'
       >
          <div className='flex w-full items-center justify-between p-10 max-[30.8125rem]:px-5'>
             <HeaderLogo />

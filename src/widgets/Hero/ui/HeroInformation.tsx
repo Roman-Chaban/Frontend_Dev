@@ -3,6 +3,7 @@ import { Fragment, type FC } from "react";
 import { ArrowIcon } from "@/shared/ui/ArrowIcon";
 
 import { heroInformationItems } from "../data/hero-info";
+import Link from "next/link";
 
 export const HeroInformation: FC = () => {
    return (
@@ -19,7 +20,9 @@ export const HeroInformation: FC = () => {
                   {item.about}
                </p>
                <button className='text-logo-after flex w-full max-w-fit items-center gap-24 pt-15 text-start text-[1.25rem]'>
-                  Le&apos;ts talk <ArrowIcon />
+                  <Link className="flex items-center gap-5" href={"https://t.me/romanchaban"} target='_blank'>
+                     Le&apos;ts talk <ArrowIcon />
+                  </Link>
                </button>
             </Fragment>
          ))}

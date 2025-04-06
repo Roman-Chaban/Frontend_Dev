@@ -1,4 +1,5 @@
 import { FC, useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 import Image from "next/image";
 
@@ -9,6 +10,7 @@ import { BurgerMenu } from "../../../features/Burger/Burger";
 
 export const Header: FC = () => {
    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+   const router = useRouter();
 
    const handleToggleMenu = () => {
       setIsMenuOpen((prevState) => !prevState);
@@ -28,8 +30,20 @@ export const Header: FC = () => {
       };
    }, [isMenuOpen]);
 
+   useEffect(() => {
+      const handleRouteChange = () => {
+         setIsMenuOpen(false);
+      };
+
+      router.events.on("routeChangeStart", handleRouteChange);
+
+      return () => {
+         router.events.off("routeChangeStart", handleRouteChange);
+      };
+   }, [router.events]);
+
    return (
-      <header className='relative z-10 col-span-12 h-full w-full'>
+      <header className='relative col-span-12 h-full w-full'>
          <div className='relative mx-auto flex w-full max-w-[96.875rem] items-center justify-between px-30 pt-10 pb-23 max-[90.0625rem]:px-18 max-[86.25rem]:px-10 max-[30.8125rem]:px-5'>
             <HeaderLogo />
             <HeaderNav />

@@ -9,6 +9,9 @@ export const Portfolio: FC = () => {
    return (
       <section className='relative w-full'>
          <div className='mx-auto my-16 px-30 max-[90.0625rem]:px-18 max-[86.25rem]:px-10 max-[30.8125rem]:px-5'>
+            <h2 className='text-7xl font-semibold max-[90rem]:text-6xl max-[26.5625rem]:text-4xl'>
+               My Portfolio:
+            </h2>
             <div className='bg-skills grid w-full grid-cols-3 gap-10 rounded-md p-10 max-[75rem]:grid-cols-2 max-[48.125rem]:grid-cols-1'>
                {portfolioProjects.map((project) => (
                   <div

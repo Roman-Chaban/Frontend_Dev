@@ -1,6 +1,6 @@
 import { type FC } from "react";
 
-import { aboutListItems } from "./data/about-list";
+import { aboutListItems } from "../data/about-list";
 
 const AboutInformation: FC = () => {
    return (
@@ -9,7 +9,7 @@ const AboutInformation: FC = () => {
             {aboutListItems.map((item) => (
                <div
                   key={item.id}
-                  className='mb-12 rounded-xl py-8 shadow-lg transition hover:shadow-xl'
+                  className='mb-12 rounded-xl py-8 shadow-lg transition hover:shadow-xl max-[86.25rem]:px-0'
                >
                   <div className='mb-6'>
                      <span className='block text-xl font-medium'>

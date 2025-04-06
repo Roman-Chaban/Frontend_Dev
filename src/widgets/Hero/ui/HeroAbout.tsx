@@ -9,7 +9,7 @@ export const HeroAbout: FC = () => {
             {heroAboutList.map((item) => (
                <li
                   key={item.id}
-                  className='flex flex-col items-end gap-3 max-[86.25rem]:items-start max-[62rem]:items-end max-[51.5rem]:items-start'
+                  className='flex flex-col items-start gap-3 max-[86.25rem]:items-start max-[62rem]:items-end max-[51.5rem]:items-start'
                >
                   <span className='text-2xl max-[86.25rem]:text-xl max-[51.5rem]:min-h-[3.3rem] max-[37rem]:text-2xl'>
                      {item.title}

@@ -14,7 +14,7 @@ const heroAboutList: HeroAboutListItems = [
    {
       id: 3,
       title: "Role",
-      subtitle: "Frontend Developer",
+      subtitle: "Software Engineer",
    },
 ];
 

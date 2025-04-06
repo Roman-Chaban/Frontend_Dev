@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { AboutInformation } from "@/features/AboutInformation/AboutInformation";
+import { AboutInformation } from "@/features/AboutInformation/ui/AboutInformation";
 
 export default function AboutPage() {
    return (
